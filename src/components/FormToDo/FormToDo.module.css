@@ -1,0 +1,41 @@
+.button {
+    width: 60px;
+    height: 44px;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.552);
+    font-weight: bold;
+    margin-left: 10px;
+    border: 0;
+    background-color: rgb(2, 141, 233);
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(80, 166, 224);
+    cursor: pointer;
+}
+
+.input {
+    display: inline-block;
+    width: 60%;
+    height: 40px;
+    font: inherit;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.input::placeholder {
+ 
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

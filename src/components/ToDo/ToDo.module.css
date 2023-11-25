@@ -1,0 +1,39 @@
+.li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.552);
+    font-weight: bold;
+    margin-left: 10px;
+    border: 0;
+    background-color: rgba(219, 92, 92, 0.423);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(231, 0, 0);
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px 0 0;
+}
+
+.p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
