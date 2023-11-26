@@ -1,6 +1,16 @@
 .App {
   text-align: center;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 600px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
+
+
 
 .App-logo {
   height: 40vmin;

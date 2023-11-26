@@ -14,9 +14,10 @@ const ToDoList = () => {
     
     useEffect(() => {
         const localTodo = localStorage.getItem('todo')
+        console.log(localTodo);
         if (localTodo) setToDoList(JSON.parse(localTodo))
     }, []);
-
+    
     const handleCheckCompleted = (id) => {
         setToDoList((prevTodoList) => {
             return prevTodoList.map((todo) =>
@@ -53,7 +54,7 @@ const ToDoList = () => {
             <FormToDo addTodoHandler={addTodoHandler} />
             {toDoList && (
                 <ul>
-                    {toDoList.map((todo) => (<ToDo key={todo.id} todo={todo} handleCheckCompleted={handleCheckCompleted} handleDelete={handleDelete} />))}
+                    {toDoList.map((todo, idx) => (<ToDo key={todo.id} todo={todo} idx={idx} handleCheckCompleted={handleCheckCompleted} handleDelete={handleDelete} />))}
                 </ul>
             )}
             <Toaster
