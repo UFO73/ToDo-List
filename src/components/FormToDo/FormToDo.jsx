@@ -1,25 +1,32 @@
-import { useState } from "react";
-import c from './FormToDo.module.css'
+import { useState } from 'react';
 
-const FormToDo = ({addTodoHandler}) => {
-   const [todo, setTodo] = useState('');
+import css from './FormToDo.module.css';
+
+const FormToDo = ({ addTodoHandler }) => {
+    const [todo, setTodo] = useState('');
     const handleChange = (e) => {
-        setTodo(e.target.value)
+        setTodo(e.target.value);
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleClikc = () => {
         if (todo) {
             addTodoHandler(todo);
         }
         setTodo('');
     };
-    
+
     return (
-        <form onSubmit={handleSubmit} className={c.form}>
-                <input placeholder="Create To-Do" type="text" name="todo" value={todo} onChange={handleChange} className={c.input} />
-            <button className={c.button} type="submit" >Add To-do</button>
-        </form>
+        <div className={css.form}>
+            <input
+                placeholder="Create To-Do"
+                type="text"
+                name="todo"
+                value={todo}
+                onChange={handleChange}
+                className={css.input}
+            />
+            <button className={css.button} onClick={handleClikc}>Add To-do</button>
+        </div>
     )
 };
 
