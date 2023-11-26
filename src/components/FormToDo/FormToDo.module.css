@@ -6,12 +6,11 @@
     font-weight: bold;
     margin-left: 10px;
     border: 0;
-    background-color: rgb(2, 141, 233);
+    background-color: rgb(129, 129, 129);
 }
 
 .button:hover {
-    color: white;
-    background-color: rgb(80, 166, 224);
+    background-color: rgba(129, 129, 129, 0.553);
     cursor: pointer;
 }
 

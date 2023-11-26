@@ -4,14 +4,14 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.266)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
 }
 
 .button {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    color: rgba(0, 0, 0, 0.552);
+    color: black;
     font-weight: bold;
     margin-left: 10px;
     border: 0;

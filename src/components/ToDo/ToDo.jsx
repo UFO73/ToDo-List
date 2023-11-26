@@ -6,7 +6,8 @@ const ToDo = ({ todo, handleCheckCompleted, handleDelete, idx }) => {
         <li className={c.li}>
             <div className={c.box}>
                 <input className={c.checkbox} type="checkbox" checked={todo.completed} onChange={() => handleCheckCompleted(todo.id)} />
-                <p className={c.p}>{idx + 1}. {todo.title}</p>
+                <p className={c.p}>{idx + 1}.</p>
+                <p className={c.p}>{todo.title}</p>
             </div>
             <button className={c.button} disabled={!todo.completed} type="button" aria-label='Close' onClick={() => handleDelete(todo.id)}><AiOutlineClose /></button>
         </li>

@@ -9,14 +9,13 @@ const ToDoList = () => {
     const [toDoList, setToDoList] = useState([]);
 
     useEffect(() => {
-        toDoList && localStorage.setItem('todo', JSON.stringify(toDoList))
-    }, [toDoList]);
-    
-    useEffect(() => {
         const localTodo = localStorage.getItem('todo')
-        console.log(localTodo);
         if (localTodo) setToDoList(JSON.parse(localTodo))
     }, []);
+
+	useEffect(() => {
+		toDoList && localStorage.setItem('todo', JSON.stringify(toDoList))
+	}, [toDoList])
     
     const handleCheckCompleted = (id) => {
         setToDoList((prevTodoList) => {
